@@ -26,9 +26,11 @@ function App(){
   
   return(
     <>
-      <h1 className="text-center mt-5 text-body-secondary">Currency Convertor</h1>
+    <div className="bg-success bg-gradient text-white min-vh-100 p-4 " > 
+    <h1 className="text-center mt-5 fs-1 text-white" >Currency Convertor</h1>
       <InputBox amount={amount} label="From" onAmountChange={setAmount} onCurrencyChange={setFrom} selected={from} options={option}/>
       <InputBox amount={convertedAmount} label="To"  onCurrencyChange={setTo} selected={to} disable={true} options={option}/>
+    </div>
     </>
   );
 }
